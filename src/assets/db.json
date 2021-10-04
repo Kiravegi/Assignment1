@@ -1,0 +1,85 @@
+{
+  "Latest-Progress": [
+    {
+      "Category": "Surpassed Target Scores",
+      "Score": "###, Target:500",
+      "Completed": "Month DD, YYYY"
+    },
+    {
+      "Category": "Apptitude",
+      "Score": "441, Target: 500",
+      "Completed": "Jan 23, 2021"
+    },
+
+    {
+      "Category": " Fundamentals",
+      "Score": "415, Target: 500",
+      "Completed": "Jan 24, 2021"
+    },
+    {
+      "Category": "Soft Skills",
+      "Score": "422, Target: 500",
+      "Completed": "Jan 25, 2021"
+    },
+    {
+      "Category": "Coding Assessment",
+      "Score": "380, Target: 500",
+      "Completed": "Jan 25, 2021"
+    }
+  ],
+  "Sample-jobs": [
+    {
+      "Designation": "Tech Lead,Manager",
+      "Company": "PayPal - Growth Company",
+      "Required_Score": 750
+    },
+     {
+      "Designation": "Chief Technology officer",
+      "Company": "Google - Tech Unicorn",
+      "Required_Score": 800
+    },
+    {
+      "Designation": "Tech Lead,Manager ",
+      "Company": "Cisco - Tech Company",
+      "Required_Score": 720
+    },
+    {
+      "Designation": "iOS Senior Developer",
+      "Company": "Amazon - Tech Unicorn",
+      "Required_Score": 700
+    }
+  ],
+  "Videos-links":[
+     {
+    "link_address": "https://youtu.be/6MgOHuxz2Ow",
+    "Title":"Angular Material",
+    "Source":"YouTube"
+  },
+  {
+    "link_address": "https://youtu.be/6MgOHuxz2Ow",
+    "Title":"Angular Material",
+    "Source":"YouTube"
+  },
+  {
+    "link_address": "https://youtu.be/6MgOHuxz2Ow",
+    "Title":"Angular Material",
+    "Source":"YouTube"
+  },
+  {
+    "link_address": "https://youtu.be/6MgOHuxz2Ow",
+    "Title":"Angular Material",
+    "Source":"YouTube"
+  }
+  ],
+
+"Profile":[
+  {
+    "id":1,
+    "Name":"Kiran Vegi",
+    "LastSince":"June 2021",
+    "LastActiveSession":"June 10,2021 2:55pm"
+  }
+  
+
+]
+}

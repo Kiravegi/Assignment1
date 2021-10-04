@@ -1,0 +1,37 @@
+<mat-toolbar>
+    <mat-toolbar-row  fxLayoutAlign="space-between center">
+      
+        <div >
+            <button   mat-button disableRipple>
+                <img class="icon" src="./assets/2logo.jpg"  alt="error">
+                <span>Equae</span>
+            </button>
+        </div>
+        <div>
+            <button class="toggle_menu" fxShow.xs="true" fxShow.sm="true" fxShow="false" [matMenuTriggerFor]="menu" mat-button>
+                <mat-icon>menu</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+                <div>
+                    <button mat-menu-item color="primary" (click)="openDialog()">Give Feedback
+                    </button>
+                    <button mat-menu-item color="primary" (click)="openDialog()" >Invite a Friend
+                    </button>
+                    <button mat-menu-item color="warn" (click)="openDialog()" >Log Out
+                    </button>
+                </div>
+              </mat-menu>
+        </div>
+        <div class="toolbar_buttons" fxHide.xs="true" fxHide.sm="true">
+            <button mat-button color="primary" (click)="openDialog()">Give Feedback
+                <mat-icon aria-hidden="false" aria-label="Example home icon">feedback</mat-icon>
+            </button>
+            <button mat-button color="primary" (click)="openDialog()">Invite a Friend
+                <mat-icon aria-hidden="false" aria-label="Example home icon">mail</mat-icon>
+            </button>
+            <button mat-button color="warn" (click)="openDialog()">Log Out
+                <mat-icon aria-hidden="false" aria-label="Example home icon">exit_to_app</mat-icon>
+            </button>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>

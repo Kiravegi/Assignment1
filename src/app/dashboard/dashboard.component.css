@@ -1,0 +1,70 @@
+
+      .header{  
+          padding-bottom:  20px; ;
+      }
+     
+   .second_row{  
+     padding-top: 2%;
+   }
+
+   .Banner1{  
+     background-color: azure;
+     padding: 2.5%;
+   }
+   
+   #cong-text { 
+     font-weight: 500;
+    color: rgb(45, 121, 226);
+   }
+   #icon1{
+    font-size: 56px;
+   }
+   .max{  
+     margin: 10px;
+     padding: 40px;
+   }
+   #fingerprint{  
+     font-size: 35px;
+     color: rgb(124, 201, 124);
+   }
+   .profile-pic{  
+     margin: 10px;
+   }
+   #profile-icon{  
+    font-size: 50px;
+   }
+
+   @media only screen and (max-width: 600px) {
+    .max{  
+      margin: px;
+      padding: 0px;
+    }
+    #cong-text { 
+      font-weight: 500;
+     color: rgb(45, 121, 226);
+    }
+    
+    h1 { 
+      font-size: 150%;
+      font-weight: 500;
+     color: rgb(45, 121, 226);
+    }
+
+    .banner_container{  
+     background-color: azure;
+     text-align: center;
+   }
+
+   .welcome_text h1{ 
+     font-size: 130%;
+     color: black;
+   }
+
+   #icon1{
+    font-size: 40px;
+   }
+
+   .Banner1{  
+     padding-top:20px;
+  }
+}

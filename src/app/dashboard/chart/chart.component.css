@@ -1,0 +1,67 @@
+#blocks {    
+    background-color: rgba(245, 219, 185, 0.47);
+    
+}
+
+a { 
+    color: rgb(45, 121, 226);
+}
+.block-subject{   
+    margin: 10px;
+}
+
+.chart{    
+    padding: 1%;
+    background-color: rgba(245, 219, 185, 0.47);
+   
+    
+}
+
+h1{ 
+    font-weight: 700;
+    color: rgb(45, 121, 226);
+    text-align: center;
+}
+h3{ 
+    font-weight: 700;
+}
+
+
+.container{ 
+    width: 100px;
+    height: 100px;
+}
+#gray{   
+    color: brown;
+
+}
+
+.update-profile{    
+    text-decoration: underline;
+}
+
+#my_chart{   
+    background-color: rgb(217, 230, 230);
+}
+h5{ 
+    font-weight: 600;
+}
+a:hover{    
+    font-weight: 600;
+}
+
+.chart-pie{ 
+    height: 50%;
+    width: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .chart-pie{ 
+        height: 50%;
+        width: 80%;
+    }
+
+
+}

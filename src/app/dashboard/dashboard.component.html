@@ -1,0 +1,76 @@
+<div class="max">
+  <div fxShow *ngFor="let id of proData" fxShow.lg="true">
+    <div class="welcome_text" fxLayout="row">
+      <h1>Welcome back, {{id.Name}}! </h1>
+      <mat-icon id="fingerprint" color="primary">fingerprint</mat-icon>
+    </div>
+  </div>
+  <!-- First Row -->
+  <div class="flex-container" fxLayout="row" fxLayoutAlign="space-between" fxLayout.lt-sm="column"
+    fxLayoutAlign.lt-sm="space-between ">
+    <mat-card class="profile-card" fxFlex="28">
+      <div class="icons-flex" fxLayout="row" fxLayoutAlign="space-between ">
+        <div class="profile-pic">
+          <mat-icon id="profile-icon" color="warn">person</mat-icon>
+          <button mat-icon-button color="primary" (click)="openDialog()">
+            <span matBadge="+" matBadgeOverlap="true" matBadgeSize="medium"></span>
+          </button>
+        </div>
+        <div class="edit">
+          <button mat-icon-button color="primary" (click)="openDialog()">
+            <mat-icon color="primary">mode</mat-icon>
+          </button>
+        </div>
+      </div>
+
+
+      <mat-card-header *ngFor="let id of proData" class="profile-details">
+        <!-- <button mat-icon-button color="primary" class="more-button" aria-label="Toggle menu">
+          <mat-icon>mode</mat-icon>
+        </button> -->
+        <mat-card-title class="header">{{id.Name}}</mat-card-title>
+        <mat-card-subtitle>Active Since {{id.LastSince}}</mat-card-subtitle>
+        <mat-card-subtitle>Last active session {{id.LastActiveSession}}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+
+    <div class="Banner1" fxLayout="row" fxLayoutAlign="space-between center" fxFlex="68" fxLayout.lt-sm="column"
+      fxLayoutGap.lt-sm="20" fxLayoutAlign.lt-sm="space-between center">
+      <div class="banner_container" fxFlexOrder.lt-sm="2">
+        <h1 id="cong-text">Congratulations! Your hardwork paid off.</h1>
+        <h1 id="cong-text">You're ready to take your career to the next level. </h1>
+        <h3 id="cong-text">Learn additional tips and advice to take your professional career to the next chapter.</h3>
+      </div>
+      <div fxFlexOrder.lt-sm="1">
+        <mat-icon id="icon1" color="primary">check_circle</mat-icon>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Row -->
+  <div fxLayout="row" class="second_row" fxLayoutAlign="space-between" fxLayout.lt-sm="column"
+    fxLayoutAlign.lt-sm="space-between stretch">
+    <div class="side_container" fxFlex="28">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>
+            Latest Progress
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-card-header>
+            <mat-card-subtitle *ngFor="let row of regData" class="Latest-progress-header">
+              <p><b>{{row.Category}}- Score: {{row.Score}}</b> <br>
+                {{row.Completed}}- Completed</p>
+            </mat-card-subtitle>
+          </mat-card-header>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="app-chart" fxFlex="68">
+      <app-chart></app-chart>
+      <app-job-sugg></app-job-sugg>
+      <app-re-videos></app-re-videos>
+    </div>
+  </div>
+</div>

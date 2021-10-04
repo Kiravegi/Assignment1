@@ -1,0 +1,13 @@
+
+
+
+
+
+  @media only screen and (max-width: 600px) {
+      
+    .toolbar    {   
+    height: 30%;
+    background-color: blanchedalmond;
+    padding-top: 15%;
+}
+  }

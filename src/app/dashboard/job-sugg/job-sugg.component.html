@@ -1,0 +1,18 @@
+<h2>Sample Jobs with Suggested Scores</h2>
+
+<div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-between center" fxLayout.lt-sm="column"  fxLayoutAlign.lt-sm="center stretch">
+
+    <mat-card fxLayout="row" fxLayoutAlign="space-between center" *ngFor="let row of jobData" fxFlex="100%">
+        <div class="container" fxLayout="row" fxLayoutAlign="space-between center" fxLayout.lt-sm="row"  fxLayoutAlign.lt-sm="space-between start" fxLayoutGap.lt-sm="120px">
+            <div class="blocks1" >
+                <h4>{{row.Designation}}</h4>
+                <mat-card-subtitle>
+                    <p>{{row.Company}}</p>
+                </mat-card-subtitle>
+            </div>
+            <div class="blocks2" >
+                <button mat-button color="accent">{{row.Required_Score}}</button>
+            </div>
+        </div>
+    </mat-card>
+  

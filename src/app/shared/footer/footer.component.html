@@ -1,0 +1,26 @@
+<mat-toolbar class="toolbar">
+    <mat-toolbar-row fxLayoutAlign="space-between center"  fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="space-evenly start" > 
+
+        <div  fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="space-evenly start">
+            <button mat-button color="warn" (click)="openDialog()" >About Us
+            </button>
+            <button mat-button color="warn" (click)="openDialog()" >FAQ
+            </button>
+            <button mat-button color="warn" (click)="openDialog()" >Member Services
+            </button>
+        </div>
+        <div fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="space-evenly start" >
+            <div>
+                <button mat-button color="warn" (click)="openDialog()" >Terms & Conditions | Privacy Policies
+                </button>
+            </div>
+            <div>
+                <button mat-button disableRipple color="warn">©2021 Your Tech Scores
+                </button>
+            </div>
+
+
+        </div>
+
+    </mat-toolbar-row>
+</mat-toolbar>

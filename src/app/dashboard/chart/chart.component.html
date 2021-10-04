@@ -1,0 +1,141 @@
+<div class="chart">
+    <mat-card id="chart-box">
+        <div fxLayout="row" fxLayoutAlign="space-between center" fxLayout.lt-sm="column"
+            fxLayoutAlign.lt-sm="space-around center">
+
+            <div class="chart-pie" FxFlex="70" fxFlexOrder.lt-sm="2">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="chart-score" fxLayout.lt-sm="row" FxFlex="30" fxFlexOrder.lt-sm="1">
+                <div fxLayout.lt-sm="row" fxLayoutAlign.lt-sm="space-evenly center ">
+
+                    <div style="text-align: center;">
+                        <mat-card-header>
+                            <mat-card-subtitle>
+                                your score
+                            </mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <h1 id="blue">720</h1>
+                            <mat-card-subtitle>
+                                as of Apr 01, 2021
+                            </mat-card-subtitle>
+                        </mat-card-content>
+                    </div>
+                    <hr>
+                    <div style="text-align: center;">
+                        <mat-card-header>
+                            <mat-card-subtitle>
+                                your target
+                            </mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <h1 id="gray">670</h1>
+                            <mat-card-subtitle>
+                                by Jul 15, 2021
+                            </mat-card-subtitle>
+                        </mat-card-content>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </mat-card>
+</div>
+
+
+<mat-card-header style="padding-top:2%;">
+    <mat-card-title>
+        <mat-card-content>
+            <h2>Following Sections determine your comprehensive career score</h2>
+            <mat-card-subtitle>
+                To get an accurate score,ensure all four sections have been completed.retake if necessary.
+            </mat-card-subtitle>
+
+            <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-between center" fxLayout.lt-sm="column"
+                fxLayoutAlign.lt-sm="space-between">
+
+                <div id="blocks" fxFlex="50">
+                    <div class="block-subject">
+                        <h5>Technical Expertise:</h5>
+                        <mat-card-subtitle>
+                            Here you're evaluated with a series of 30+ multiple choice questions
+                            reguarding your technical knowledge based on the target job you're selected
+                            improve the area by re-taking the quiz when you feel ready.
+                            <a class="update-profile" (click)="openDialog()"> Take Quiz Now</a>
+                        </mat-card-subtitle>
+                    </div>
+                </div>
+                <div id="blocks" fxFlex="50">
+                    <div class="block-subject">
+                        <h5>Profile Details:</h5>
+                        <mat-card-subtitle>
+                            This section consists of quality of your resume and your digital constribution,
+                            such as networking sites like LinkedIn, GitHub, or Medium.Get an improved score by uploading
+                            a new resume or adding
+                            profile links.
+                            <a class="update-profile" (click)="openDialog()"> Update
+                                Profile</a>
+                        </mat-card-subtitle>
+                    </div>
+                </div>
+
+
+            </div>
+            <br>
+            <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-between center" fxLayout.lt-sm="column"
+                fxLayoutAlign.lt-sm="space-between">
+
+                <div id="blocks" fxFlex="50">
+                    <div class="block-subject">
+                        <h5>Coding Proficiency:</h5>
+                        <mat-card-subtitle>
+                            You'll be asked to solve a coding problem, where we'll challenging ypor language Mastery.
+                            OOPS Concepts, Programming Constructs, and more.
+                            <a class="update-profile" (click)="openDialog()"> Start Coding Challenge</a>
+                        </mat-card-subtitle>
+                    </div>
+                </div>
+
+                <div id="blocks" fxFlex="50">
+                    <div class="block-subject">
+                        <h5>Presentation Readliness:</h5>
+                        <mat-card-subtitle>
+                            With a series of background questions, you're evalated in different areas, like interview
+                            readliness,
+                            presentation Skills, and management tasks.
+                            <a class="update-profile" (click)="openDialog()"> Take Quiz Now</a>
+                        </mat-card-subtitle>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="padding-top:2%" fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-between center"
+                fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="space-between">
+
+                <mat-card fxFlex="50">
+                    <div class="block-subject">
+                        <h3>Areas of Strength</h3>
+                        <mat-card-subtitle>
+                            <li>Lorem ipsum wazi dolor sit amed-- Advanced</li>
+                            <li>Lorem ipsum wazi dolor sit amed-- Advanced</li>
+                            <li>Lorem ipsum wazi dolor sit amed-- Advanced</li>
+                        </mat-card-subtitle>
+                    </div>
+                </mat-card>
+
+                <mat-card fxFlex="50">
+                    <div class="block-subject">
+                        <h3>Areas of improvement</h3>
+                        <mat-card-subtitle>
+                            <li>Lorem ipsum wazi dolor sit amed-- Advanced</li>
+                            <li>Lorem ipsum wazi dolor sit amed-- Advanced</li>
+                            <li>Lorem ipsum wazi dolor sit amed-- Advanced</li>
+                        </mat-card-subtitle>
+                    </div>
+                </mat-card>
+            </div>
+        </mat-card-content>
+    </mat-card-title>
+</mat-card-header>
